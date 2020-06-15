@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="362.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.owenrodriguez.controller.EspecialidadController">
+   <children>
+      <Label layoutX="133.0" layoutY="4.0" prefHeight="37.0" prefWidth="155.0" text="especialidades">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="41.0" text="Codigo">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="290.0" layoutY="41.0" text="Especialidad">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="18.0" layoutY="68.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00fffc" />
+               </light>
+            </Lighting>
+         </effect></TextField>
+      <TextField layoutX="257.0" layoutY="68.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00fffc" />
+               </light>
+            </Lighting>
+         </effect></TextField>
+      <TableView layoutX="48.0" layoutY="102.0" prefHeight="185.0" prefWidth="321.0">
+        <columns>
+          <TableColumn prefWidth="166.0" text="Codigo Especialidad" />
+          <TableColumn prefWidth="154.0" text="Nombre especialidad" />
+        </columns>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00fffc" />
+               </light>
+            </Lighting>
+         </effect>
+      </TableView>
+      <Button layoutX="125.0" layoutY="307.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="59.0" text="Nuevo">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00fffc" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button layoutX="198.0" layoutY="307.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="59.0" text="Eliminar">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00fffc" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button layoutX="272.0" layoutY="307.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="59.0" text="Editar">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00fffc" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button layoutX="343.0" layoutY="307.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="59.0" text="Reporte">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00fffc" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <ImageView fitHeight="65.0" fitWidth="59.0" layoutX="9.0" layoutY="295.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/backMainMenu.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

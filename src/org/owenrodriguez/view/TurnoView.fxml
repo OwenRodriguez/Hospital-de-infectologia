@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.owenrodriguez.controller.TurnoController">
+   <children>
+      <Label layoutX="63.0" layoutY="57.0" text="Codigo Turno :" />
+      <Label layoutX="68.0" layoutY="102.0" text="Fecha Turno:" />
+      <Label layoutX="285.0" layoutY="80.0" text="Fecha Cita :" />
+      <Label layoutX="286.0" layoutY="133.0" text="Valor Cita :" />
+      <Label layoutX="237.0" layoutY="27.0" text="Código Medico Especialidad :" />
+      <Label layoutX="454.0" layoutY="57.0" text="Código Responsable Turno :" />
+      <Label layoutX="485.0" layoutY="102.0" text="Código Paciente:" />
+      <TextField fx:id="txtvalorCita" editable="false" layoutX="237.0" layoutY="158.0" prefHeight="25.0" prefWidth="156.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00fffc" />
+               </light>
+            </Lighting>
+         </effect></TextField>
+      <TextField fx:id="txtcodMedicoEspecialidad" editable="false" layoutX="241.0" layoutY="53.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00fffc" />
+               </light>
+            </Lighting>
+         </effect></TextField>
+      <TextField fx:id="txtcodResponsableTurno" editable="false" layoutX="454.0" layoutY="76.0" prefWidth="149.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00fffc" />
+               </light>
+            </Lighting>
+         </effect></TextField>
+      <TextField fx:id="txtcodPaciente" editable="false" layoutX="455.0" layoutY="129.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00fffc" />
+               </light>
+            </Lighting>
+         </effect></TextField>
+      <TableView fx:id="tblTurno" layoutX="3.0" layoutY="193.0" prefHeight="200.0" prefWidth="624.0">
+        <columns>
+          <TableColumn fx:id="colcodTurno" prefWidth="68.0" text="Cod. Turno" />
+          <TableColumn fx:id="colcodMedicoEspecialidad" prefWidth="136.0" text="Cod. Med. Especialidad" />
+            <TableColumn fx:id="colcodResponsableTurno" prefWidth="141.0" text="Cod. Responsable Turno" />
+            <TableColumn fx:id="colcodPaciente" minWidth="3.0" prefWidth="81.0" text="Cod. Paciente" />
+            <TableColumn fx:id="colfechaTurno" minWidth="7.0" prefWidth="74.0" text="Fecha Turno" />
+            <TableColumn fx:id="colfechaCita" minWidth="8.0" prefWidth="62.0" text="Fecha Cita" />
+            <TableColumn fx:id="colvalorCita" prefWidth="60.0" text="Valor Cita" />
+        </columns>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00fffc" />
+               </light>
+            </Lighting>
+         </effect>
+      </TableView>
+      <Button fx:id="btnAgregar" layoutX="192.0" layoutY="413.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="90.0" text="Guardar">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00fffc" />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button fx:id="btnEliminar" layoutX="299.0" layoutY="413.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="90.0" text="Eliminar">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00fffc" />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button fx:id="btnEditar" layoutX="409.0" layoutY="413.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="90.0" text="Editar">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00fffc" />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button fx:id="btnReportar" layoutX="513.0" layoutY="413.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="90.0" text="Reporte">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00fffc" />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <TextField layoutX="26.0" layoutY="76.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00fffc" />
+               </light>
+            </Lighting>
+         </effect></TextField>
+      <TextField layoutX="26.0" layoutY="129.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00fffc" />
+               </light>
+            </Lighting>
+         </effect></TextField>
+      <TextField layoutX="241.0" layoutY="98.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00fffc" />
+               </light>
+            </Lighting>
+         </effect></TextField>
+      <ImageView fitHeight="55.0" fitWidth="61.0" layoutX="18.0" layoutY="402.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/backMainMenu.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="283.0" layoutY="-4.0" text="Turnos">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.owenrodriguez.controller.MedicoController">
+   <children>
+      <Label alignment="BASELINE_CENTER" layoutX="302.0" prefHeight="40.0" prefWidth="97.0" text="Medicos">
+         <font>
+            <Font size="26.0" />
+         </font></Label>
+      <Label layoutX="483.0" layoutY="20.0" text="Liencia medica :" textFill="#2600ff">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#f50000" />
+               </light>
+            </Lighting>
+         </effect></Label>
+      <TextField fx:id="txtLicenciaMedica" editable="false" layoutX="482.0" layoutY="40.0" prefHeight="31.0" prefWidth="205.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00e6ff" />
+               </light>
+            </Lighting>
+         </effect></TextField>
+      <Label layoutX="20.0" layoutY="20.0" text="Nombres :" textFill="#2600ff">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#f50000" />
+               </light>
+            </Lighting>
+         </effect></Label>
+      <Label layoutX="20.0" layoutY="72.0" text="Apellidos :" textFill="#2600ff">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#f50000" />
+               </light>
+            </Lighting>
+         </effect></Label>
+      <TextField fx:id="txtNombres" editable="false" layoutX="19.0" layoutY="40.0" prefHeight="31.0" prefWidth="205.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00e6ff" />
+               </light>
+            </Lighting>
+         </effect></TextField>
+      <TextField fx:id="txtApellidos" layoutX="19.0" layoutY="92.0" prefHeight="31.0" prefWidth="205.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00e6ff" />
+               </light>
+            </Lighting>
+         </effect></TextField>
+      <Label layoutX="211.0" layoutY="128.0" text="Hora de entrada :" textFill="#2600ff">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#f50000" />
+               </light>
+            </Lighting>
+         </effect></Label>
+      <Label layoutX="396.0" layoutY="128.0" text="Hora de salida :" textFill="#2600ff">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#f50000" />
+               </light>
+            </Lighting>
+         </effect></Label>
+      <Label layoutX="483.0" layoutY="72.0" text="Sexo :" textFill="#2600ff">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#f50000" />
+               </light>
+            </Lighting>
+         </effect></Label>
+      <TextField fx:id="txtSexo" editable="false" layoutX="482.0" layoutY="92.0" prefHeight="31.0" prefWidth="205.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00e6ff" />
+               </light>
+            </Lighting>
+         </effect></TextField>
+      <Button fx:id="btnNuevo" layoutX="263.0" layoutY="368.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="40.0" prefWidth="91.0" text="Nuevo">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00e6ff" />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button fx:id="btnEditar" layoutX="472.0" layoutY="368.0" mnemonicParsing="false" onAction="#Editar" prefHeight="40.0" prefWidth="97.0" text="Editar">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00e6ff" />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button fx:id="btnEliminar" layoutX="368.0" layoutY="368.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="40.0" prefWidth="91.0" text="Eliminar">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00e6ff" />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button fx:id="btnReporte" layoutX="585.0" layoutY="368.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="97.0" text="Reporte">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00e6ff" />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <TableView fx:id="tblMedicos" layoutX="5.0" layoutY="184.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="177.0" prefWidth="691.0">
+         <columns>
+            <TableColumn fx:id="colCodigoMedico" prefWidth="62.0" text="Cod. Med" />
+            <TableColumn fx:id="colLicenciaMedica" prefWidth="93.0" text="LicenciaMedica" />
+            <TableColumn fx:id="colNombres" prefWidth="88.0" text="Nombres" />
+            <TableColumn fx:id="colApellidos" prefWidth="87.0" text="Apellidos" />
+            <TableColumn fx:id="colHoraDeEntrada" minWidth="3.0" prefWidth="100.0" text="Hora De Entrada" />
+            <TableColumn fx:id="colHoraDeSalida" minWidth="0.0" prefWidth="87.0" text="Hora De salida" />
+            <TableColumn fx:id="colTurnoMaximo" minWidth="9.0" prefWidth="88.0" text="Turno maximo" />
+            <TableColumn fx:id="colSexo" minWidth="9.0" prefWidth="85.0" text="Sexo" />
+         </columns>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00e6ff" />
+               </light>
+            </Lighting>
+         </effect>
+      </TableView>
+      <ImageView fitHeight="62.0" fitWidth="70.0" layoutX="2.0" layoutY="357.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/backMainMenu.png" />
+         </image>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00ffff" />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <TextField fx:id="txtHoraDeSalida" editable="false" layoutX="396.0" layoutY="148.0" prefHeight="31.0" prefWidth="97.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00e6ff" />
+               </light>
+            </Lighting>
+         </effect>
+      </TextField>
+      <TextField fx:id="txtHoraDeEntrada" editable="false" layoutX="211.0" layoutY="148.0" prefHeight="31.0" prefWidth="97.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00e6ff" />
+               </light>
+            </Lighting>
+         </effect>
+      </TextField>
+      <TextField fx:id="txtTurnoMaximo" editable="false" layoutX="288.0" layoutY="67.0" prefHeight="31.0" prefWidth="125.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00e6ff" />
+               </light>
+            </Lighting>
+         </effect>
+      </TextField>
+      <Label layoutX="288.0" layoutY="46.0" text="Turno maximo :" textFill="#2600ff">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#f50000" />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

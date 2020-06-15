@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="376.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.owenrodriguez.controller.AreaController">
+   <children>
+      <Label layoutX="265.0" layoutY="37.0" prefWidth="78.0" text="Código Área :" />
+      <Label layoutX="50.0" layoutY="37.0" text="Nombre Area :" />
+      <TextField fx:id="txtNombreArea" editable="false" layoutX="14.0" layoutY="62.0" prefHeight="25.0" prefWidth="150.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00eeff" />
+               </light>
+            </Lighting>
+         </effect></TextField>
+      <TableView fx:id="tblAreas" layoutX="34.0" layoutY="97.0" prefHeight="208.0" prefWidth="320.0">
+        <columns>
+          <TableColumn fx:id="colCodArea" prefWidth="160.0" text="Código Área" />
+          <TableColumn fx:id="colNombreArea" prefWidth="159.0" text="Nombres Área" />
+        </columns>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00eeff" />
+               </light>
+            </Lighting>
+         </effect>
+      </TableView>
+      <Button fx:id="btnAgregar" layoutX="89.0" layoutY="321.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="59.0" text="Nuevo">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00eeff" />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button fx:id="btnEliminar" layoutX="245.0" layoutY="321.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="59.0" text="Eliminar">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00eeff" />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button fx:id="btnEditar" layoutX="165.0" layoutY="321.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="59.0" text="Editar">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00eeff" />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button fx:id="btnReporte" layoutX="325.0" layoutY="321.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="59.0" text="Reporte">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00eeff" />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <ComboBox fx:id="cmbCodArea" layoutX="229.0" layoutY="62.0" prefWidth="150.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00eeff" />
+               </light>
+            </Lighting>
+         </effect></ComboBox>
+      <Label layoutX="168.0" layoutY="14.0" text="Areas">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="72.0" fitWidth="59.0" layoutX="5.0" layoutY="312.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/backMainMenu.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

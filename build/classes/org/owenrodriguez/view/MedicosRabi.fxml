@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.owenrodriguez.controller.MedicosRabiController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/315891-P8RUWI-712.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="270.0" layoutY="2.0" text="Medicos">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <TableView fx:id="tblMediccos" layoutX="49.0" layoutY="221.0" prefHeight="98.0" prefWidth="504.0">
+        <columns>
+          <TableColumn fx:id="colIdMedico" prefWidth="75.0" text="Colegiado" />
+          <TableColumn fx:id="colNombres" prefWidth="129.0" text="Nombres" />
+            <TableColumn fx:id="colApellidos" prefWidth="115.0" text="Apellidos" />
+            <TableColumn fx:id="colEmail" prefWidth="112.0" text="Email" />
+            <TableColumn fx:id="colExtension" minWidth="0.0" prefWidth="72.0" text="Extensión" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="241.0" layoutY="349.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" text="Nuevo" />
+      <Button fx:id="btnEliminar" layoutX="329.0" layoutY="349.0" mnemonicParsing="false" text="Eliminar" />
+      <Button fx:id="btnEditar" layoutX="417.0" layoutY="349.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" text="Editar" />
+      <Button fx:id="btnReporteq" layoutX="500.0" layoutY="349.0" mnemonicParsing="false" text="Reporte" />
+      <Label layoutX="19.0" layoutY="94.0" text="Nombres">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="316.0" layoutY="104.0" text="Apellidos">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="31.0" layoutY="148.0" text="Email">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="313.0" layoutY="148.0" text="Extensión ">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <TextField fx:id="txtNombres" layoutX="95.0" layoutY="99.0" />
+      <TextField fx:id="txtEmail" layoutX="95.0" layoutY="153.0" />
+      <TextField fx:id="txtExtension" layoutX="400.0" layoutY="153.0" />
+      <TextField fx:id="txtApellidos" layoutX="400.0" layoutY="99.0" />
+      <Label layoutX="132.0" layoutY="46.0" text="Colegiado" />
+      <TextField layoutX="213.0" layoutY="41.0" />
+   </children>
+</AnchorPane>

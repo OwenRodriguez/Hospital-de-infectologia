@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="377.0" prefWidth="627.0" style="-fx-background-color: #F0F8FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.owenrodriguez.controller.MedicoEspecialidadController">
+   <children>
+      <ComboBox fx:id="cmbCodigoMedicoEspecialidad" layoutX="14.0" layoutY="65.0" prefHeight="31.0" prefWidth="111.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00ccff" />
+               </light>
+            </Lighting>
+         </effect></ComboBox>
+      <Text layoutX="225.0" layoutY="22.0" strokeMiterLimit="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Medico Especialidad">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo Medico Especialidad" />
+      <Text layoutX="250.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo Especialidad" />
+      <Text layoutX="471.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo Horario" />
+      <TableView fx:id="tblMedicoEsecialidades" layoutX="12.0" layoutY="112.0" prefHeight="200.0" prefWidth="605.0">
+        <columns>
+          <TableColumn fx:id="colCodigoMedicoEspecialidad" prefWidth="234.0" text="Codigo Medico Especialidad" />
+          <TableColumn fx:id="colCodigoEspecialidad" prefWidth="193.0" text="Codigo Especialidad" />
+            <TableColumn fx:id="colCodigoHorario" prefWidth="177.0" text="Codigo Horario" />
+        </columns>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00ccff" />
+               </light>
+            </Lighting>
+         </effect>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="250.0" layoutY="320.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="82.0" text="Nuevo">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00ccff" />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button fx:id="btnEditar" layoutX="342.0" layoutY="320.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="82.0" text="Editar ">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00ccff" />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button fx:id="btnEliminar" layoutX="430.0" layoutY="320.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="82.0" text="Eliminar">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00ccff" />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button fx:id="btnReporte" layoutX="520.0" layoutY="320.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="82.0" text="Reporte">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00ccff" />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Label layoutX="383.0" layoutY="80.0" />
+      <ComboBox fx:id="cmbCodigoHorario" layoutX="461.0" layoutY="68.0" prefWidth="150.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00ccff" />
+               </light>
+            </Lighting>
+         </effect></ComboBox>
+      <ComboBox fx:id="cmbCodigoEspecialidad" layoutX="240.0" layoutY="68.0" prefWidth="150.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00ccff" />
+               </light>
+            </Lighting>
+         </effect></ComboBox>
+      <ImageView fitHeight="62.0" fitWidth="59.0" layoutY="316.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/backMainMenu.png" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

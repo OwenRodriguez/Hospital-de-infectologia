@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="719.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.owenrodriguez.controller.MenuPrincipalController">
+   <children>
+      <ImageView fitHeight="539.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Fondo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="102.0" fitWidth="118.0" layoutX="495.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/antecedentes.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="102.0" fitWidth="118.0" layoutX="14.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Figura02.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="102.0" fitWidth="118.0" layoutX="216.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/examenfisico.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="106.0" fitWidth="118.0" layoutX="314.0" layoutY="274.0" onMouseClicked="#ventanaMedicosRabi" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/doctor.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="102.0" fitWidth="118.0" layoutX="498.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/analitica.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="69.0" fitWidth="80.0" layoutX="448.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="106.0" fitWidth="118.0" layoutX="410.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Perfilsocial.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="118.0" fitWidth="118.0" layoutX="314.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/consulta.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="102.0" fitWidth="118.0" layoutX="115.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/CITASBIEN.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="106.0" fitWidth="134.0" layoutX="592.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/pacientee4.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="245.0" layoutY="14.0" prefHeight="69.0" prefWidth="256.0" text="Menú Principal" wrapText="true">
+         <font>
+            <Font name="Constantia" size="38.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="176.0" fitWidth="118.0" layoutX="115.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Medicamentos.png" />
+         </image></ImageView>
+      <ImageView fitHeight="149.0" fitWidth="291.0" layoutX="214.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/CHULA.png" />
+         </image>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>
